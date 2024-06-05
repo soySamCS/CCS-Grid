@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(36, 36, 36);
+    color: aliceblue;
+    padding: 24px;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 100px auto 250px 50px;
+    grid-template-rows: 100px auto;
+
+    background-color: cornflowerblue;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto; /* Centra elementos con un ancho fijo en el contenedor */
+}
+
+.item {
+    background-color: crimson;
+}
