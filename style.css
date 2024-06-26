@@ -13,35 +13,38 @@ body{
 
 .container {
     display: grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: repeat(3, 100px) /*  100px 100px  */;
-    grid-template-areas: 
-        "header header header"
-        "main   main   sidebar"
-        "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    gap: 24px; /* Define el espacio entre filas y columnas pero no en los bordes */
+    /* row-gap: 48px;  Define el espacio entre filas */
+    /* column-gap: 12px;  Define el espacio entre columnas */
 
     background-color: cornflowerblue;
     width: 500px;
     height: 500px;
     margin: 0 auto; /* Centra elementos con un ancho fijo en el contenedor */
+    padding: 24px;
 }
 
-.header{
-    grid-area: header;
+/* Colocar 5 Items con un color de fondo diferente */
+
+.item1{
     background-color: crimson;
 }
 
-.main{
-    grid-area: main;
-    background-color: deeppink;
+.item2{
+    background-color: darkorange;
 }
 
-.sidebar{
-    grid-area: sidebar;
-    background-color: palevioletred;
+.item3{
+    background-color: lightsalmon;
 }
 
-.footer{
-    grid-area: footer;
-    background-color: orange;
+.item4{
+    background-color: lightseagreen;
+}
+
+.item5{
+    background-color: greenyellow;
 }
