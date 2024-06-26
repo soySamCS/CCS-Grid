@@ -16,9 +16,11 @@ body{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 
-    gap: 24px; /* Define el espacio entre filas y columnas pero no en los bordes */
-    /* row-gap: 48px;  Define el espacio entre filas */
-    /* column-gap: 12px;  Define el espacio entre columnas */
+    grid-auto-flow: row; /* Este es el valor por default */
+    /* grid-auto-flow: column; */
+    direction: rtl ; /* Esta propiedad permite cambiar la dirección del flujo de Grid. Esta propiedad no peretenece a CSS-Grid  */
+
+    gap: 24px;
 
     background-color: cornflowerblue;
     width: 500px;
@@ -47,4 +49,14 @@ body{
 
 .item5{
     background-color: greenyellow;
+    color: black;
 }
+
+.texto{
+    text-align: center;
+    font-size: 52px;
+    align-content: center;
+}
+
+/* Deben de hacer que los números esten centrado en la vertical y la horizonal de los items. Crecer el tamaño del texto para que se note más */
+
